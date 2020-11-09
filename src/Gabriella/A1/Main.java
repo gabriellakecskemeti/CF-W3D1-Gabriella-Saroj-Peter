@@ -1,4 +1,4 @@
-package Gabriella;
+package Gabriella.A1;
 
 import java.util.*;
 
@@ -16,8 +16,7 @@ public class Main {
         allEmployee.add(new Employee("Kathrin", "Meyer", 1978, 3900));
         allEmployee.add(new Employee("Michaela", "Lang", 1972, 4100));
 
-        Iterator itr= allEmployee.iterator();
-        System.out.println(itr);
+
 
         System.out.println("***********Print out one Employee****");
         allEmployee.get(0).printOutEmployee();
@@ -25,6 +24,9 @@ public class Main {
         allEmployee.get(0).setSurName("Schnarch");
         allEmployee.get(0).printOutEmployee();
 
+
+        Iterator itr= allEmployee.iterator();
+        //System.out.println(itr);
         System.out.println("\n***********Print out all Employee****");
         while(itr.hasNext()) {
             Employee ee =(Employee) itr.next();
